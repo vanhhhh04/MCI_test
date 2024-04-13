@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'user',
+    'users',
 ]
 
 MIDDLEWARE = [
@@ -81,9 +81,10 @@ DATABASES = {
        'USER': 'postgres',
        'PASSWORD': 'postgres',
        'HOST': 'localhost',
-       'PORT': '5433',
+       'PORT': '5432',
     }
 }
+AUTH_USER_MODEL = "users.User"
 
 # Password validation
 # https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators
