@@ -38,7 +38,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'users',
+    'task',
 ]
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -81,7 +83,7 @@ DATABASES = {
        'USER': 'postgres',
        'PASSWORD': 'postgres',
        'HOST': 'localhost',
-       'PORT': '5432',
+       'PORT': '5433',
     }
 }
 AUTH_USER_MODEL = "users.User"
